@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STREET MASTER α</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>STREET MASTER α</h1>
+  <p>Based on the <a href="https://github.com/adam-lynch/back-of-your-hand">Back of Your Hand</a> project (MPL-2.0).</p>
+  <div id="controls">
+    <button id="startBtn">Start Challenge</button>
+    <div>Radius: <input type="number" id="radiusInput" value="5" min="1" max="100" /> km</div>
+    <div id="timer"></div>
+  </div>
+  <div id="map"></div>
+  <div id="result"></div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="features.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
